@@ -12,8 +12,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key:
-    secure: $AWS_SECRET_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: 'ap-southeast-1'
   app: 'quangdvn-docker-react'
   env: 'QuangdvnDockerReact-env'
